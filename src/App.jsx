@@ -9,6 +9,11 @@ export class App extends Component {
 		}
 	}
 
+	changeDeadLine() {
+		// Always change the states through the setState method 
+		this.setState({deadLine: 'December 29, 2018'})
+	}
+
 	render() {
 		return (			
 			<div className="App">
@@ -20,7 +25,7 @@ export class App extends Component {
 					<div className="Clock-seconds">30 seconds</div>
 				</div>
 				<input placeholder='new date' />
-				<button>Submit</button>
+				<button onClick={() => this.changeDeadLine()}>Submit</button>
 			</div>
 			);
 	}

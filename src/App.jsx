@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Clock from './Clock'
 import './App.css';
 
 export class App extends Component {
@@ -19,12 +20,7 @@ export class App extends Component {
 		return (
 			<div className="App">
 				<div className="App-title">Countdown to {this.state.deadLine}</div>
-				<div>
-					<div className="Clock-days">15 days</div>
-					<div className="Clock-hours">30 hours</div>
-					<div className="Clock-minutes">15 minutes</div>
-					<div className="Clock-seconds">30 seconds</div>
-				</div>
+				<Clock />
 				<input
 					placeholder='new date'
 					onChange={event => this.setState({newDeadLine: event.target.value})}

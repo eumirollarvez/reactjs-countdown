@@ -13,7 +13,7 @@ export class App extends Component {
 
 	changeDeadLine() {
 		// Always change the states through the setState method 
-		this.setState({deadline: this.state.newDeadLine})
+		this.setState({deadline: this.state.newDeadline})
 	}
 
 	render() {
